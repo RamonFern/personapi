@@ -32,7 +32,8 @@ public class Phone {
 	}
 
 
-	public Phone(PhoneType type, String number) {
+	public Phone(Long id, PhoneType type, String number) {
+		this.id = id;
 		this.type = type;
 		this.number = number;
 	}

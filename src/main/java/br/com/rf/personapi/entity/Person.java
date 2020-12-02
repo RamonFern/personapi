@@ -40,7 +40,8 @@ public class Person {
 	private List<Phone> phones;
 	
 
-	public Person(String firstName, String lastName, String cpf, LocalDate birthDate, List<Phone> phones) {
+	public Person(Long id, String firstName, String lastName, String cpf, LocalDate birthDate, List<Phone> phones) {
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.cpf = cpf;
