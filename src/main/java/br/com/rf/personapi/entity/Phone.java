@@ -9,12 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import br.com.rf.personapi.enums.PhoneType;
-import lombok.Builder;
-import lombok.Data;
 
 @Entity
-@Data
-@Builder
 public class Phone {
 
 	@Id
