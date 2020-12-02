@@ -12,16 +12,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 public class Person {
 	
 	@Id
@@ -42,7 +38,6 @@ public class Person {
 	@OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE,CascadeType.REMOVE})
 	@Column(nullable = false)
 	private List<Phone> phones;
-	
 	
 
 	public Person(String firstName, String lastName, String cpf, LocalDate birthDate, List<Phone> phones) {
